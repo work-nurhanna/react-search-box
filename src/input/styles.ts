@@ -12,9 +12,10 @@ export const StyledInput = styled.input`
     inputBackgroundColor: string;
     leftIcon: ReactNode;
     iconBoxSize: string | number;
+    inputPadding: string;
   }) => inputFontSize};
-  padding: ${({ leftIcon, iconBoxSize }) =>
-    leftIcon ? `10px ${iconBoxSize}` : "10px 20px"};
+  padding: ${({ leftIcon, iconBoxSize, inputPadding }) =>
+    leftIcon ? `10px ${iconBoxSize}` : inputPadding};
   height: ${({ inputHeight }) => inputHeight};
   border: 1px solid ${({ inputBorderColor }) => inputBorderColor};
   border-radius: 5px;

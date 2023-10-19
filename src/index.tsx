@@ -102,6 +102,7 @@ interface IProps {
    * The type of the input.
    */
   type?: string;
+  inputPadding?: string;
 }
 
 const ReactSearchBox: FC<IProps> = ({
@@ -124,6 +125,7 @@ const ReactSearchBox: FC<IProps> = ({
   leftIcon,
   iconBoxSize = "24px",
   type = "text",
+  inputPadding = "",
 }) => {
   const [matchedRecords, setMatchedRecords] = useState<any>([]);
   const [value, setValue] = useState<string>("");
@@ -231,6 +233,7 @@ const ReactSearchBox: FC<IProps> = ({
 
     return (
       <InputBox
+        inputPadding={inputPadding}
         placeholder={placeholder}
         name={name}
         value={value}

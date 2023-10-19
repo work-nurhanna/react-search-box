@@ -21,6 +21,7 @@ interface IProps {
   iconBoxSize: number | string;
   type: string;
   onKeyDown: (event: KeyboardEvent) => void;
+  inputPadding: string;
 }
 
 const Input: FC<IProps> = ({
@@ -39,6 +40,7 @@ const Input: FC<IProps> = ({
   iconBoxSize,
   type,
   onKeyDown,
+  inputPadding,
 }) => {
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -79,6 +81,7 @@ const Input: FC<IProps> = ({
         leftIcon={leftIcon}
         iconBoxSize={iconBoxSize}
         onKeyDown={onKeyDown}
+        inputPadding={inputPadding}
       />
       {leftIconNode()}
     </StyledInputContainer>
