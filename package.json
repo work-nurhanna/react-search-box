@@ -1,6 +1,6 @@
 {
-  "name": "react-search-box",
-  "version": "3.0.0",
+  "name": "@nurhanna/react-search-box",
+  "version": "3.0.1",
   "description": "An autocomplete search box for ReactJS",
   "license": "MIT",
   "author": "ghoshnirmalya",
